@@ -5,10 +5,12 @@ editor CSS 19child_for_ja
 // ===== config =====
 @import "config";
 
+/* エディターのタイトルのフォントサイズと書体を変更 */
 .editor-post-title__block .editor-post-title__input:lang(ja) {
     font-family: $serif-font-family;
     font-size: $ttl-font-size;
 }
+/* エディターの段落のフォントサイズを変更 */
 p {
     font-size: $base-font-size;
 }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/*!
  Theme Name:   Twenty Nineteen Child for ja
  Theme URI:    http://example.com/
  Description:  Twenty Nineteen Child Theme for japanese
@@ -12,10 +12,18 @@
  Tags:         japanese
 */
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond:700|Noto+Serif+JP:400,700");
+/* ==== base ===== */
+/* ベースフォントサイズを変更 */
 html {
     font-size: 16px;
 }
 
+/* h1, h2のフォントファミリーを変更 */
+h1:lang(ja), h2:lang(ja) {
+    font-family: "EB Garamond", "Noto Serif JP", serif;
+}
+
+/* リンクカラーをプライマリーカラーに変更 */
 a {
     color: #CE2121;
 }
@@ -32,22 +40,28 @@ a:hover {
     color: #CE2121;
 }
 
-h1:lang(ja), h2:lang(ja) {
-    font-family: "EB Garamond", "Noto Serif JP", serif;
-}
-
+/* ボタンカラーをプライマリーカラーに変更 */
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
     background: #CE2121;
 }
 
-/* == font size == */
+/* 画像のオーバーカラーをプライマリーカラーに変更 */
+.image-filters-enabled .site-header.featured-image .site-featured-image:before, .image-filters-enabled .site-header.featured-image .site-featured-image:after,
+.image-filters-enabled .entry .post-thumbnail:before,
+.image-filters-enabled .entry .post-thumbnail:after {
+    background: #CE2121;
+    opacity: 0.4;
+}
+
+/* ==== entry ===== */
+/* タイトルのフォントサイズを調整 */
 @media only screen and (min-width: 768px) {
     .entry .entry-title, .entry .not-found .page-title, .entry .error-404 .page-title, .entry .has-larger-font-size, .entry h2 {
         font-size: 32px;
     }
 }
 
-/* == color 文字色用及び背景用の色 == */
+/*　エディターの文字色用及び背景用の色を設定 */
 .entry .entry-content .has-primary-background-color {
     background-color: #CE2121;
 }

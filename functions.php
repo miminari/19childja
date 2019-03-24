@@ -70,9 +70,4 @@ function setup_editor_menu_for_19child() {
  }
 add_action( 'after_setup_theme', 'setup_editor_menu_for_19child' ,11);
 
-
-
-
-
-
 ?>

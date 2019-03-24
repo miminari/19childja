@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/*!
  Theme Name:   Twenty Nineteen Child for ja
  Theme URI:    http://example.com/
  Description:  Twenty Nineteen Child Theme for japanese
@@ -15,10 +15,16 @@
 // ===== config =====
 @import "config";
 
-// ==== base =====
+/* ==== base ===== */
+/* ベースフォントサイズを変更 */
 html {
     font-size: $base-font-size;
 }
+/* h1, h2のフォントファミリーを変更 */
+h1:lang(ja),h2:lang(ja) {
+    font-family: $serif-font-family;
+}
+/* リンクカラーをプライマリーカラーに変更 */
 a {
     color: map-get($theme-colors, 'primary');
     &:visited {
@@ -31,17 +37,26 @@ a {
         color: map-get($theme-colors, 'primary');
     }
 }
-h1:lang(ja),h2:lang(ja) {
-    font-family: $serif-font-family;
-}
+/* ボタンカラーをプライマリーカラーに変更 */
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
     background: map-get($theme-colors, 'primary');
 }
+/* 画像のオーバーカラーをプライマリーカラーに変更 */
+.image-filters-enabled {
+    .site-header.featured-image .site-featured-image,
+    .entry .post-thumbnail {
+        &:before,
+        &:after {
+            background: map-get($theme-colors, 'primary');
+            opacity: 0.4;
+        }
+    }
+}
 
-// ===== entry ( editor ) styles =====
+/* ==== entry ===== */
 @import "entry";
 
-/* == color 文字色用及び背景用の色 == */
+/*　エディターの文字色用及び背景用の色を設定 */
 .entry .entry-content {
     @each $key, $color in $theme-colors {
         & .has-#{$key}-background-color {

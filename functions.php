@@ -11,7 +11,7 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'child-style', get_theme_file_uri() . '/style.css' );
 }
 
-//カラーパレットと文字サイズメニューの設定
+//子テーマ用のテーマサポートの読み込み
 function setup_editor_menu_for_19child() {
     //カラーパレット
     add_theme_support( 'editor-color-palette', array(
@@ -31,6 +31,7 @@ function setup_editor_menu_for_19child() {
             'color' => '#000',
         )
     ) );
+    //フォントサイズ
     add_theme_support( 'editor-font-sizes', array(
         array(
             'name' => __( 'Small', 'themeLangDomain' ),
@@ -60,10 +61,10 @@ function setup_editor_menu_for_19child() {
     //文字サイズの数値指定をオフにする設定
     add_theme_support( 'disable-custom-font-sizes' );
 
-    // Add support for editor styles.
+    //エディタースタイルのサポートをon
     add_theme_support( 'editor-styles' );
 
-    // Enqueue editor styles.
+    //エディタースタイルに反映するCSSを指定
     add_editor_style( 'editor-style-child.css' );
 
  }

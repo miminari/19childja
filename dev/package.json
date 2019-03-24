@@ -1,0 +1,29 @@
+{
+  "name": "19childja",
+  "version": "0.1.0",
+  "description": "sass compile etc.",
+  "author": "photosynthesic",
+  "license": "GPL-2.0-or-later",
+  "repository": "",
+  "scripts": {
+    "sass": "node-sass --output-style expanded --indent-width 4 style.scss style.css & node-sass --output-style expanded --indent-width 4 editor-style-child.scss editor-style-child.css",
+    "autoprefix": "npx postcss *.css --use autoprefixer -d ../ --no-map",
+    "build": "npm run sass && npx postcss *.css --use autoprefixer -d ../ --no-map",
+    "watch": "nodemon -e scss -x \"npm run build\"",
+    "release": "npm run build"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.3",
+    "cpx": "^1.5.0",
+    "postcss-cli": "^6.1.0",
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1% in JP"
+  ]
+}

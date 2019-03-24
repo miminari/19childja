@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*
+ Theme Name:   Twenty Nineteen Child for ja
+ Theme URI:    http://example.com/
+ Description:  Twenty Nineteen Child Theme for japanese
+ Author:       mimi
+ Author URI:   https://blog.photosynthesic.jp/
+ Template:     twentynineteen
+ Version:      0.1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         japanese
+*/
+
+// ===== config =====
+@import "config";
+
+// ==== base =====
+html {
+    font-size: $base-font-size;
+}
+a {
+    color: map-get($theme-colors, 'primary');
+    &:visited {
+        color: darken(map-get($theme-colors, 'primary'),10%);
+    }
+    &:hover {
+        color: map-get($theme-colors, 'primary');
+    }
+    .widget & {
+        color: map-get($theme-colors, 'primary');
+    }
+}
+h1:lang(ja),h2:lang(ja) {
+    font-family: $serif-font-family;
+}
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background: map-get($theme-colors, 'primary');
+}
+
+// ===== entry ( editor ) styles =====
+@import "entry";
+
+/* == color 文字色用及び背景用の色 == */
+.entry .entry-content {
+    @each $key, $color in $theme-colors {
+        & .has-#{$key}-background-color {
+            background-color: $color;
+        }
+        & .has-#{$key}-color {
+            color: $color;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/*
+editor CSS 19child_for_ja
+*/
+
+// ===== config =====
+@import "config";
+
+.editor-post-title__block .editor-post-title__input:lang(ja) {
+    font-family: $serif-font-family;
+    font-size: $ttl-font-size;
+}
+p {
+    font-size: $base-font-size;
+}

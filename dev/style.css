@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*
+ Theme Name:   Twenty Nineteen Child for ja
+ Theme URI:    http://example.com/
+ Description:  Twenty Nineteen Child Theme for japanese
+ Author:       mimi
+ Author URI:   https://blog.photosynthesic.jp/
+ Template:     twentynineteen
+ Version:      0.1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         japanese
+*/
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:700|Noto+Serif+JP:400,700");
+html {
+    font-size: 16px;
+}
+
+a {
+    color: #CE2121;
+}
+
+a:visited {
+    color: #a21a1a;
+}
+
+a:hover {
+    color: #CE2121;
+}
+
+.widget a {
+    color: #CE2121;
+}
+
+h1:lang(ja), h2:lang(ja) {
+    font-family: "EB Garamond", "Noto Serif JP", serif;
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background: #CE2121;
+}
+
+/* == font size == */
+@media only screen and (min-width: 768px) {
+    .entry .entry-title, .entry .not-found .page-title, .entry .error-404 .page-title, .entry .has-larger-font-size, .entry h2 {
+        font-size: 32px;
+    }
+}
+
+/* == color 文字色用及び背景用の色 == */
+.entry .entry-content .has-primary-background-color {
+    background-color: #CE2121;
+}
+
+.entry .entry-content .has-primary-color {
+    color: #CE2121;
+}
+
+.entry .entry-content .has-secondary-background-color {
+    background-color: #988768;
+}
+
+.entry .entry-content .has-secondary-color {
+    color: #988768;
+}
+
+.entry .entry-content .has-background-background-color {
+    background-color: #000;
+}
+
+.entry .entry-content .has-background-color {
+    color: #000;
+}

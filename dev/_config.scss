@@ -1,0 +1,11 @@
+//テーマカラー設定
+$theme-colors: (
+    primary: #CE2121,
+    secondary: #988768,
+    background: #000
+);
+//フォント設定
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:700|Noto+Serif+JP:400,700');
+$serif-font-family: 'EB Garamond', 'Noto Serif JP', serif;
+$base-font-size: 16px;
+$ttl-font-size: 32px;

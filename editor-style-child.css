@@ -1,0 +1,12 @@
+/*
+editor CSS 19child_for_ja
+*/
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:700|Noto+Serif+JP:400,700");
+.editor-post-title__block .editor-post-title__input:lang(ja) {
+    font-family: "EB Garamond", "Noto Serif JP", serif;
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}

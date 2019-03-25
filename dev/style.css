@@ -53,7 +53,6 @@ a:hover {
     opacity: 0.4;
 }
 
-/* ==== entry ===== */
 /* タイトルのフォントサイズを調整 */
 @media only screen and (min-width: 768px) {
     .entry .entry-title, .entry .not-found .page-title, .entry .error-404 .page-title, .entry .has-larger-font-size, .entry h2 {

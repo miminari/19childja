@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 19childja\n"
+"POT-Creation-Date: 2019-03-25 08:43+0900\n"
+"PO-Revision-Date: 2019-03-25 08:47+0900\n"
+"Last-Translator: mimi <mimitips@gmail.com>\n"
+"Language-Team: mimi <mimitips@gmail.com>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: functions.php:44
+msgid "Small"
+msgstr "小"
+
+#: functions.php:49
+msgid "Normal"
+msgstr "標準"
+
+#: functions.php:54
+msgid "Large"
+msgstr "大"
+
+#: functions.php:59
+msgid "Huge"
+msgstr "特大"
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Nineteen Child for ja"
+msgstr "Twenty Nineteen Child for ja"
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/miminari/19childja"
+msgstr "https://github.com/miminari/19childja"
+
+#. Description of the plugin/theme
+msgid "Twenty Nineteen Child Theme for japanese"
+msgstr "Twenty Nineteen の日本語向け子テーマです"
+
+#. Author of the plugin/theme
+msgid "mimi"
+msgstr "mimi"
+
+#. Author URI of the plugin/theme
+msgid "https://blog.photosynthesic.jp/"
+msgstr "https://blog.photosynthesic.jp/"

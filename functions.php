@@ -1,8 +1,15 @@
 <?php
-
 /**
+ * @package 19childja
+ * @author mimi
+ * @license GPL-2.0+
  * Twenty Nineteen の子テーマサンプルです。
  */
+
+/**
+ * 翻訳ファイルの読み込み
+ */
+load_theme_textdomain( '19childja', get_theme_file_path() . '/languages' );
 
 //style.cssの読み込み
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
@@ -34,22 +41,22 @@ function setup_editor_menu_for_19child() {
     //フォントサイズ
     add_theme_support( 'editor-font-sizes', array(
         array(
-            'name' => __( 'Small', 'themeLangDomain' ),
+            'name' => __( 'Small', '19childja' ),
             'size' => 12,
             'slug' => 'small'
         ),
         array(
-            'name' => __( 'Normal', 'themeLangDomain' ),
+            'name' => __( 'Normal', '19childja' ),
             'size' => 14,
             'slug' => 'normal'
         ),
         array(
-            'name' => __( 'Large', 'themeLangDomain' ),
+            'name' => __( 'Large', '19childja' ),
             'size' => 21,
             'slug' => 'large'
         ),
         array(
-            'name' => __( 'Huge', 'themeLangDomain' ),
+            'name' => __( 'Huge', '19childja' ),
             'size' => 36,
             'slug' => 'huge'
         )

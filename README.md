@@ -11,7 +11,7 @@ dev/ で `npm install`
 
 ### 設定
 
-dev/_config.scss でテーマカラーを設定しています。
+dev/color_config.json でテーマカラーを設定しています。
 
 ### 書き出し
 

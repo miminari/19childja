@@ -19,6 +19,8 @@ dev/_config.scss でテーマカラーを設定しています。
 
 `npm run watch` でSassの監視
 
+`npm run color_config`で色の書き出し（開発途中）
+
 ---
 
 詳しくは

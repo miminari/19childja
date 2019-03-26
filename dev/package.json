@@ -8,6 +8,7 @@
   "scripts": {
     "sass": "node-sass --output-style expanded --indent-width 4 style.scss style.css & node-sass --output-style expanded --indent-width 4 editor-style-child.scss editor-style-child.css",
     "autoprefix": "npx postcss *.css --use autoprefixer -d ../ --no-map",
+    "color_config": "node theme_color_pick.js",
     "build": "npm run sass && npx postcss *.css --use autoprefixer -d ../ --no-map",
     "watch": "nodemon -e scss -x \"npm run build\"",
     "release": "npm run build"

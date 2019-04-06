@@ -25,3 +25,9 @@ dev/color_config.json でテーマカラーを設定しています。
 
 詳しくは
 [#13 WP ZoomUP 「WordPressの新エディターGutenbergをもっと知ろう」 - connpass](https://wpzoom.connpass.com/event/121891/)
+
+---
+
+## License
+19childja WordPress Theme is derived from Twenty Nineteen WordPress Theme, Copyright 2019 miminari
+Twenty Nineteen WordPress Theme is distributed under the terms of the GNU GPL

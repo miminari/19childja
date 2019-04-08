@@ -24,7 +24,7 @@ dev/color_config.json でテーマカラーを設定しています。
 ---
 
 詳しくは
-[#13 WP ZoomUP 「WordPressの新エディターGutenbergをもっと知ろう」 - connpass](https://wpzoom.connpass.com/event/121891/)
+[「WordPressの新エディターGutenbergをもっと知ろう」WP ZoomUP #13 レポート - WP ZoomUP](https://wpzoomup.com/learn-more-gutenberg/)
 
 ---
 
